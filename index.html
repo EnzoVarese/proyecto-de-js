@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Fashion</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="gfonts" id="grid-container">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="nav container">
+            <a href="./index.html" class="logo">IT Fashion</a>
+            <!-- CARRITO DE COMPRAS ICONO -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!-- CARRITO -->
+            <div class="cart">
+                <h2 class="cart-title">Carrito</h2>
+                <!-- CONTENIDO DEL CARRITO -->
+                <div class="cart-content">
+                    
+                </div>
+                <!-- TOTAL -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BOTON DE COMPRAR -->
+                <button type="button" class="btn-buy">COMPRAR</button>
+                <!-- CERRAR CARRITO -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!-- TIENDA -->
+    <main class="main">
+        <h1 class="titulo-tienda"><strong>IT Fashion - Nuestra tienda</strong></h1>
+            <div class="parrafo-tienda">
+                <p>Bienvenidos a la tienda online de IT Fashion, aquí encontrarás todo lo necesario para vestir con la última tendencia.</p>
+            </div>
+        <section class="shop container">
+            <h2 class="section-title">¡NUESTROS PRODUCTOS!</h2>
+            <!-- BUSCADOR -->
+            <div>
+                <p class="buscador__texto">Escriba el nombre del producto que busca: <input type="text" name="" id="entrada" class="buscador__input"><button id="buscadorBoton" class="buscador_boton"><i class='bx bx-search-alt'></i></button>
+                <div class="buscador-productos"></div>
+            </div>
+            <!-- CONTENIDO DE LA TIENDA -->
+            <div class="shop-content">
+             
+            </div>
+        </section>
+        <!-- SECCION DE COMENTARIOS -->
+        <div id="comentariosPagina" class="comentarios__container">
+            <h3>Algunos comentarios de nuestros clientes</h3>
+        </div>
+    </main> 
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div>
+            <p class="footer__alumno"> Enzo Varese</p>
+            <p class="footer__comision">Comision 25405</p>
+        </div>
+    </footer>
+    <!-- TEMPLATE CONTAINERS DE PRODUCTOS -->
+    <template id="template-containerProductos">
+        <div class="product-box">
+            <img src="" alt="" class="product-img">
+            <h2 class="product-title"></h2>
+            <span class="price"></span>
+            <i class='bx bx-shopping-bag add-cart productsContainer__item__button'></i>
+        </div>
+    </template>
+    <!-- TEMPLATE CARRITO -->
+    <template>
+        <img src="" alt="" height="150px" class="cart-img">
+        <div class="detail-box">
+            <div class="cart-product-title"></div>
+            <div class="cart-price"></div>
+            <input type="number" value="1" class="cart-quantity">
+        </div>
+        <!-- REMOVER CARRITO -->
+        <i class='bx bxs-trash-alt cart-remove'></i>
+    </template>
+    <!-- JS -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/clases.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
